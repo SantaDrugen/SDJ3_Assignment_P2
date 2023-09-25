@@ -4,14 +4,14 @@ import java.util.Date;
 
 public class Animal {
 
-    int animalRegistrationNumber;
-    double weight;
-    Date date;
-    Farm farm;
+    private int animalRegistrationNumber;
+    private double weight;
+    private Date dateOfArrival;
+    private Farm farm;
 
     public Animal(double weight, Date date, Farm farm) {
         this.weight = weight;
-        this.date = date;
+        this.dateOfArrival = date;
         this.farm = farm;
     }
 
@@ -24,7 +24,7 @@ public class Animal {
     }
 
     public Date getDate() {
-        return date;
+        return dateOfArrival;
     }
 
     public Farm getFarm() {
